@@ -1,26 +1,9 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
 html {
-  box-sizing: border-box;
-
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-
-  font-family: "PT Sans", sans-serif;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
+  font-family: "Georgia";
 }
 
 .banner {
-  max-height: 500px;
+  max-height: 515px;
   overflow: hidden;
   position: relative;
 }
@@ -28,12 +11,74 @@ html {
 img {
   display: block;
   width: 100%;
-  position: absolute;
 }
 
-p,
-h1,
-a {
-  bottom: -250px;
-  position: relative;
+@media only screen and (min-width: 60em) {
+
+  .banner {
+    max-height: 465px;
+    overflow: hidden;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .btn {
+    background-color: transparent;
+    border-color: white;
+    height: 3em;;
+  }
+
+  .text {
+    max-width: 27em;
+    margin-right: 14em;
+  }
+
+  .banner-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner {
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .btn {
+    background-color: transparent;
+    border-color: white;
+    height: 3em;;
+  }
+
+  .text {
+    max-width: 27em;
+    margin-right: 14em;
+  }
+
+  .banner-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+  }
+
 }
