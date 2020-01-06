@@ -1,10 +1,39 @@
-.img-flex {
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  font-family: "PT Sans", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.banner {
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  display: block;
+  width: 100%;
   position: absolute;
 }
 
 p,
-h1 {
+h1,
+a {
+  bottom: -250px;
   position: relative;
-  bottom: -420px;
-  left: 16px;
 }
