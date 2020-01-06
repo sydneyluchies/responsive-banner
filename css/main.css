@@ -1,0 +1,10 @@
+.img-flex {
+  position: absolute;
+}
+
+p,
+h1 {
+  position: relative;
+  bottom: -420px;
+  left: 16px;
+}
